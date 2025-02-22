@@ -127,8 +127,6 @@ const app = {
         }
 
         audio.onplay = function() {
-            console.log(_this.currentPlayingSong)
-            console.log($('.song-0'))
             _this.currentPlayingSong.classList.remove('active')
             _this.currentPlayingSong = $(`.song-${_this.currentIndex}`)
             _this.currentPlayingSong.classList.add('active')
